@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="googlerecaptcha">
+<head>
+    <title>Google reCaptcha</title>
+    <link rel="site.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+</head>
+<body ng-controller="captchaController">
+    <div>
+        <div id="widget_captcha1">
+
+        </div>
+        <div><button type="submit" ng-click="showGoogleCaptcha('widget_captcha1')">widget 1 capctha</button></div>
+    </div>
+    <div>
+        <div id="widget_captcha2">
+        </div>
+        <div><button type="submit" ng-click="showGoogleCaptcha('widget_captcha2')">widget 2 capctha</button></div>
+    </div>
+
+</body>
+</html>
