@@ -1,4 +1,4 @@
-# GooglereCaptcha
+# Google reCaptcha
 Implementation of google reCaptcha
 Details:
 
