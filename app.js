@@ -45,7 +45,7 @@ var captcha = (function () {
                 var crrtCaptcha = correctCaptcha.bind(null, id);
                 var cllbckCaptcha = captchaCallback.bind(null, id);
                 hashMap_Widget[id] = grecaptcha.render(element, {
-                    'sitekey': '6LefZBEUAAAAAPAEpkD1GL-lDtTsxmIZ5ZQFFxnP',
+                    'sitekey': '****-*****', // place your site key here
                     'callback': crrtCaptcha,
                     'expired-callback': cllbckCaptcha
                 });
