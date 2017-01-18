@@ -6,6 +6,8 @@ app.controller('captchaController', ['$scope', function ($scope) {
         }
         else { 
             // if the already opened captcha is not answered do something here
+            // generally if user clicks on submit button we show validations to answer the captcha
+            alert('Prove you are not a robot');
         }
     };
 }]);
@@ -44,6 +46,7 @@ var captcha = (function () {
             } else {
                 var crrtCaptcha = correctCaptcha.bind(null, id);
                 var cllbckCaptcha = captchaCallback.bind(null, id);
+                
                 hashMap_Widget[id] = grecaptcha.render(element, {
                     'sitekey': '****-*****', // place your site key here
                     'callback': crrtCaptcha,
